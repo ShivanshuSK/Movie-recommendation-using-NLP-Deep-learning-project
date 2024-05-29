@@ -6,4 +6,6 @@ Furthermore, comments are hardly viewed these days because people are so busy.Us
 access important information and data via recommendation systems, which are checked and processed
 based on their needs. The ability of machine-learning algorithms to recognize user interests and
 preferences allows them to guess relevant and similar information for users, which is why recommender
-systems are significant and successful.
+systems are significant and successful.Then the api from tensorflow hub is being used-Universal sentence encoder which functions in the way
+that it creates the embeddings of text or sentences in the vector form and based on the sentiment
+analysis it would create its embeddings space
