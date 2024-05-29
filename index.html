@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Movie Recommender</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="mt-4 mb-4">Movie Recommender</h1>
+
+    <!-- User input form -->
+    <form id="recommenderForm" method="POST" action="/">
+      <div class="form-group">
+        <label for="userInput">Tell us about your preferences:</label>
+        <textarea class="form-control" id="userInput" name="userInput" rows="3" placeholder="E.g., I like action and adventure movies."></textarea>
+      </div>
+      <div>
+            <label for="submit"></label>
+            <input class="btn btn-outline-primary" type="submit" value="GET RECOMMENDATIONS :" id="submit">
+        </div>
+    </form>
+
+    <!-- Recommended movies section -->
+    <div id="recommendations" class="mt-4">
+      <h3>Recommended Movies:</h3>
+      <ul id="movieList" class="list-group">
+        {% for movies in ans %}
+            <li>{{movies}}</li>
+        {% endfor %}
+      </ul>
+      </ul>
+    </div>
+
+    <div>
+
+    </div>
+  </div>
+
+</body>
+</html>
